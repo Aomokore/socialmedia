@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Raleway', 'display';
+            line-height: 1.6;
+            color: #dd3a93;
+            background-image: url("images.jpeg"); /* Replace with your desired image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: rgb(8, 7, 7);
+        }
+    
+        header {
+            background: linear-gradient(to right, #f9a2f5, #f44884);
+            color: #fff;
+            padding: 1rem 0;
+        }
+    
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            align-items: center;
+            margin: auto;
+            padding: 0 20px;
+        }
+    
+        header h1 {
+            font-size: 5rem;
+            margin: 0 50px;
+        }
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+    
+    
+        header nav a {
+            color: #ebeff4;
+            text-decoration: none;
+            margin: 20px 50px;
+            font-size: 2rem;
+        }
+    
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .content-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .content-section .text h2 {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            color: #0d0d0d;
+        }
+
+        .content-section .text p {
+            margin-bottom: 1.2rem;
+            color: #080808;
+            font-size: 2rem;
+        }
+        .brand-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .brand-logos img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .brand-logos img:hover {
+            filter: grayscale(0%);
+        }
+        /* Sections */
+        section {
+            padding: 2rem 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    
+        .service-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #fbf9fb;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .service-card h3{
+            margin-bottom: 1rem;
+        }
+    
+        .service-card p {
+            font-size: 0.9rem;
+        }
+        /* Contact Section */
+
+        #contact {
+            background: transparent;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            color: #0a0a0a69;
+            margin-bottom: 1rem;
+        }
+
+         
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+    
+        .contact input,
+        .contact textarea,
+        .contact button {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        .contact button {
+            background: #2575FC;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    
+        .contact button:hover {
+            background: #6A11CB;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Amy-June PR</h1>
+            <nav>
+                <a href="Amy-June.html">Home</a>
+                <a href="#service">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="content-section">
+        <div class="text">
+            <h2>Brand Management</h2>
+            <p>At Amy June PR Firm, we specialize in building connections between your brand and the media. Our tailored
+            strategies ensure that your story is heard by the right people, fostering trust and credibility.</p>
+            <p>We leverage our expertise and extensive media network to craft impactful narratives that resonate with your
+            audience. Let us help you amplify your message and achieve your business goals.</p>
+        </div>
+    </div>
+    <!-- Brand Logos Section -->
+    <div class="brand-logos">
+        <img src="download (3).jpeg" alt="Brand 1">
+        <img src="download wood.png" alt="Brand 2">
+        <img src="download orai.png" alt="Brand 3">
+        <img src= "download silk.jpeg" alt="Brand 4">
+    </div>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <a href="media-relations.html">
+                    <h3>Media Relations</h3>
+                    <p>We connect your brand with the right audiences through impactful stories.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="event-planning.html">
+                    <h3>Event Planning</h3>
+                    <p>From concept to execution, we deliver unforgettable events tailored to your goals.</p>
+                </a>
+            </div>
+            <div class="service-card">
+                <a href="brand-management.html">
+                    <h3>Brand Management</h3>
+                    <p>Enhance and protect your brand image in today's competitive landscape.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://example.com" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+    
+            <div class="form-group">
+    
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Amy June PR Firm. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
